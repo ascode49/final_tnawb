@@ -1,0 +1,817 @@
+
+@font-face {
+   font-family: "Poppins Med";
+   src: url("/assets/fonts/Poppins/Poppins-Medium.ttf");
+   font-style: normal;
+   font-display: swap;
+ }
+ 
+
+
+
+*{
+   scroll-behavior: smooth;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+p{
+   font-family: "Poppins Med";
+   font-size: 14px;
+}
+h3{
+   font-family: "Poppins Med";
+}
+@keyframes animate{
+   from{
+       opacity: 0;
+   }
+   to{
+       opacity: 1;
+   }
+}
+@keyframes animate_2{
+   from{
+       opacity: 1;
+   }
+   to{
+       opacity: 0;
+   }
+}
+@keyframes slider{
+   0% {
+       background-image: url(https://dahd.nic.in/sites/default/filess/yoga_day_2023.jpg);
+   }
+   25%{
+       background-image: url(https://dahd.nic.in/sites/default/filess/APPI2.jpg);
+   }
+   50%{
+       background-image: url(https://dahd.nic.in/sites/default/filess/KCC.png);
+   }
+   75%{
+       background-image: url(https://dahd.nic.in/sites/default/filess/NLM.png);
+   }
+   100%{
+       background-image: url(https://dahd.nic.in/sites/default/filess/yoga_day_2023.jpg);
+   }
+}
+.nav{
+   width: 100vw;
+   height: 7.32vh;
+   background-color: #183642;
+   /* display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center; */
+}
+.navigation_items, .nav-item{
+   /* width: 4.65vw;
+   height: 3.15vh; */
+   font-family: "Poppins Med";
+   color: white !important;
+   transition: 0.25s;
+   font-size: 14px;
+
+}
+.navigation_items:hover, .nav-item:hover {
+   cursor: pointer;
+   transform: translateY(-10%);
+}  
+.nav-link{
+   color: white !important;
+   font-family: "Poppins Med";
+   font-size: 16px;
+}
+img#icon {
+   width: 24px;
+   height: auto;
+ }
+
+#contact{
+   width: 6.45vw;
+}
+.image{
+   width: 95vw;
+   height: 35vh;
+   position: absolute;
+   top: 25vh;
+   left: 2.5vw;
+   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.30);
+   border-radius: 25px;
+   animation-name: slider;
+   background-size: 100% 100%;
+   animation-duration: 35s;
+   animation-iteration-count: infinite;
+   animation-direction: linear;
+}
+#yoga_day{
+   border-radius: 25px;
+   height: 35vh;
+}
+img{
+   height: 31.25vh;
+   width: 95vw;
+}
+.tab-content{
+   height: 70vw;
+   width: 100%;
+   background: yellow;
+}
+.rightHeader{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+
+   align-items: center;
+}
+.header{
+   width: 13.635vw;
+   height: auto;
+}
+.header:hover{
+   cursor: pointer;
+}
+.CMinfo{
+   font-family: "Poppins Med";
+   font-size: 20px;
+   color: #0C1821;
+}
+.CMdes{
+   color: #324A5F;
+}
+a{
+   text-decoration: none;
+}
+
+.top{
+   background: #EAEAEA;
+   width: 100%;
+   height: 138px;
+   padding: 0px 40px;
+}
+.logo{
+   width: 120px ;
+   height: auto;
+
+}
+.logo_text{
+   color: black;
+   font-weight: bold;
+   font-family: "Poppins Med";
+
+   font-size: 21px;
+}
+/* #name{
+   vertical-align: center;
+} */
+/*  */
+.show{
+   animation-name: animate;
+   animation-duration: 0.35s;
+   display: block;
+}
+.showButton{
+   /* animation-name: animate;
+   animation-duration: 0.35s; */
+   display: block;
+}
+.closeDropdown{
+   background-color: white;
+   color: #313D5A;
+   border-radius: 50%;
+   border: 1px solid #313D5A;
+   width: 2.905vh;
+   height: 2.905vh;
+   text-align: center;
+   position: absolute;
+   top: 21.38vh;
+   left: 26.388vw;
+   display: none;
+}
+.menu{
+   margin: -1% auto;
+   color: white;
+   font-family: system-ui;
+   font-weight: 500;
+   transition: 0.25s;
+   padding: 4.5% 0 4.5% 0;
+}
+.menu:hover{
+   cursor: pointer;
+   background-color: #04454f;
+   /* height: 15%; */
+   vertical-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.dataIll{
+   width: 20.29%;
+   height: auto;
+   scale: 0.50;
+}
+.dataText{
+   color: white;
+   font-family: system-ui;
+   font-weight: 500;
+   scale: 1.15;
+}
+.map{
+   position: absolute;
+   top: 77.44vh;
+   left: 78.95vw;
+   width: 15.61vw;
+   height: 6.89vh;
+   transition: 0.25s;
+   color: white;
+   border-radius: 7px;
+   font-size: 105%;
+   font-weight: 500;
+}
+.map:hover{
+   background-color: white;
+   border: 3px solid #313D5A;
+   color: #313D5A;
+   scale: 0.90;
+}
+#offices{
+   width:14.02vw;
+   height: 25vh;
+   background-color: #037283;
+   color: white;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 0 0 15px 0;
+   text-align: center;
+   font-size: larger;
+   position: absolute;
+   top: 13.67%;
+   left: 85vw;
+   transition: 0.25s;
+   display: none;
+   transition: 0.25s;
+   border-radius:  7px 0  0 7px ;
+}
+.contact_menu{
+   margin: 1% auto;
+   padding: 4% 0 4% 0;
+}
+.contact_menu:hover{
+   background-color: #04454f;
+   cursor: pointer;
+}
+.reveal{
+   display: block;
+}
+marquee{
+   position: absolute;
+   font-style: italic;
+   top: 110vh;
+   left: 12.25%;
+   width: 75vw;
+   height: 2.5vh;
+   scale: 1.25;
+   text-transform: uppercase;
+   font-weight: bolder;
+   word-spacing: 0.25em;
+   font-family: system-ui;
+   color: white;
+   vertical-align: center;
+   text-align: center;
+   align-items: center;
+   align-content:center;
+   font-size: small;
+   background-color: #313D5A;
+   border-radius: 5px;
+}
+#scroll{
+   z-index: 1;
+   width: 3.5vw;
+   height: 3.25vw;
+   background-color: #313D5A;
+   font-size: 225%;
+   display: flex;
+   font-size: 175%;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 0 0 0.35% 0.15%;
+   border-radius: 50%;
+   position: fixed;
+   top: 90%;
+   left: 93.5%;
+   display: none;
+   color: white;
+   transition: 0.25s;
+   font-weight: bold;
+}
+ul{
+   top: -10%;
+   color: white;
+   line-height: 150%;
+   word-spacing: 0.5em;
+   font-weight: 500;
+   font-family: system-ui;
+   font-size: medium;
+   list-style: square;
+}
+
+.animal h3{
+   color: white;
+   font-family: system-ui;
+   font-weight: bold;
+   position: absolute;
+   left: 1.63rem;
+   top: 7.5rem;
+   font-size: 175%;
+   margin: none;
+}
+.farmer h3{
+   color: white;
+   font-family: system-ui;
+   font-weight: bold;
+   position: absolute;
+   left: 31rem;
+   top: 7.5rem;
+   font-size: 175%;
+   margin: none;
+}
+.egopala h3{
+   color: white;
+   font-family: system-ui;
+   font-weight: bold;
+   position: absolute;
+   left: 61rem;
+   top: 7.5rem;
+   font-size: 175%;
+   width: 100%;
+   margin: none;
+}
+.circle-container {
+   scale: 1.5;
+   position: absolute;
+   top: 20rem;
+   left: 50%;
+   transform: translateX(-45%);
+   width: 400px;
+   height: 400px;
+   padding: 20px;
+   border-radius: 50%;
+   margin: 50px auto;
+}
+#scroll:hover{
+   cursor: pointer;
+   transform: translateY(-10%);
+}
+#center{
+   background-color:#DDE6ED ;
+   width: 250px;
+   height: 250px;
+   position: absolute;
+   top: -150%;
+   left: -145%;
+   border-radius: 50%;
+}
+ .circle-container a {
+   display: block;
+   position: absolute;
+   top: 165%; 
+   left: 50%;
+   width: 50px; 
+   height: 50px;
+   margin: -10px;
+ }
+ .bubble{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: #313D5A;
+   transition: 0.25s;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+   text-align: center;
+   vertical-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: system-ui;
+   color: white;
+   font-size: 50%;
+   font-weight: bolder;
+ }
+ .deg0, .deg90, .deg45, .deg135{
+   font-size: 150%;
+ }
+ .deg180,.deg315{
+   font-size: 135%;
+ }
+ .bubble:hover{
+   cursor: pointer;
+   transform: translateY(-10%);
+   background-color: #73628A;
+ }
+ .circle-container img { display: block; width: 100%; }
+ .deg0 { transform: translate(200px); } /* 12em = half the width of the wrapper */
+ .deg45 { transform: rotate(45deg) translate(200px) rotate(-45deg); }
+ .deg90 { transform: rotate(90deg) translate(200px) rotate(-90deg); }
+ .deg135 { transform: rotate(135deg) translate(200px) rotate(-135deg); }
+ .deg180 { transform: translate(-200px); }
+ .deg225 { transform: rotate(225deg) translate(200px) rotate(-225deg); }
+ .deg270 { transform: rotate(270deg) translate(200px) rotate(90deg); }
+ .deg315 { transform: rotate(315deg) translate(200px) rotate(-315deg); }
+
+.info{
+   position: absolute;
+   top: 125rem;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 86.81rem;
+   height: 29.06rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.circulars, .releases, .advisories{
+   width: 30%;
+   height:100%;
+   font-family: system-ui;
+   text-align: center;
+   color: white;
+   background-color: #F3F3F3;
+   overflow-y: scroll;
+   word-wrap: break-word;
+}
+.info h3{
+   height: 3.44rem;
+   background-color: #313D5A;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   word-spacing: 0.5em;
+   margin: auto;
+}
+.info li{
+   color: black;
+   font-family: system-ui;
+   padding: 0 1.25em 0 1.25em;
+   text-align: left; 
+   margin-top: 1em;
+   margin-bottom: 1.5em;
+   font-size: medium;
+   transition: 0.25s;
+   word-wrap: break-word;
+   width: 85%;
+}
+.info li:hover{
+   cursor: pointer;
+   scale: 1.05;
+   margin-left: 0.5em;
+   color: #242d42;
+   text-decoration: underline;
+}
+.pay{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: #313D5A;
+   transition: 0.25s;
+   border: 2px solid #313D5A;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.564);
+   text-align: center;
+   color: white;
+   font-size: 100%;
+   font-weight: bolder;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 225rem;
+   scale: 1.15;
+}
+.pay:hover{
+   cursor: pointer;
+   border: 2px solid #313D5A;
+   background-color: white;
+   color: #313D5A;
+}
+.pay_options a {
+   display: block;
+   position: absolute;
+   top: 165%; 
+   left: 50%;
+   width: 50px; 
+   height: 50px;
+   margin: -10px;
+   scale: 0.25;
+}
+.circle-container img { display: block; width: 100%; }
+ .deg0_pay { transform: translate(300px); } /* 12em = half the width of the wrapper */
+ .deg45_pay { transform: rotate(-45deg) translate(300px) rotate(45deg); }
+ .deg90_pay { transform: rotate(-90deg) translate(300px) rotate(90deg); }
+
+#content {
+   max-width: 500px;
+   margin: 25vh auto;
+   position: absolute;
+   top: 350%;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   font-family: system-ui;
+   transition: 0.25s;
+ }
+ #content:hover{
+   cursor: pointer;
+ }
+ .testimonial blockquote {
+   margin: 10px 10px 0;
+   background: #efefef;
+   padding: 20px 50px;
+   position: relative;
+   border: none;
+   border-radius: 8px;
+   font-style: italic;
+ }
+ 
+ .testimonial blockquote:before,
+ .testimonial blockquote:after {
+   content: "\201C";
+   position: absolute;
+   font-size: 80px;
+   line-height: 1;
+   color: #757f9a;
+   font-style: normal;
+ }
+ 
+#gandhi_image{
+   width: 220px;
+   height: 220px;
+   position: absolute;
+   top: 100%;
+   left: -35%;
+   transition: 0.25s;
+   background: url(pictures/Gandhi-ji-is-angry-and-giving-stop-hand-sign-5-large.png) no-repeat;
+   background-size: 100% 100%;
+   display: inline-block;
+}
+ .testimonial blockquote:before {
+   top: 0;
+   left: 10px;
+ }
+ 
+ .testimonial blockquote:after {
+   content: "\201D";
+   right: 10px;
+   bottom: -0.5em;
+ }
+ .testimonial div {
+   width: 0;
+   height: 0;
+   border-left: 0 solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 20px solid #efefef;
+   margin: 0 0 0 50px;
+ }
+ 
+ .testimonial p {
+   margin: 8px 0 0 20px;
+   text-align: left;
+   color: #fff;
+ }
+ .request{
+   width: 51.50rem;
+   height: 5.44rem;
+   text-align: center;
+   font-family: system-ui;
+   box-shadow: 7.5px 7.5px 4px rgba(0, 0, 0, 0.250);
+   background-color: rgb(196, 196, 196);
+   border-radius: 15px;
+   font-weight: 500;
+   font-size: large;
+   color: #313D5A;
+   position: absolute;
+   top: 110rem;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+.show{
+   display: block;
+}
+#menu {
+   width: 150px;
+   height: 150px;
+   position: absolute;
+   left: 50%;
+   top: 100rem;
+   margin: -75px 0 0 -75px;
+   list-style: none;
+   font-size: 200%;
+ }
+ .menu-button {
+   opacity: 0;
+   z-index: -1;
+ }
+ .menu-button {
+   width: 150px;
+   height: 150px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin: -75px 0 0 -75px;
+   border-radius: 50%;
+   background: #313D5A;
+   background-size: 100%;
+   overflow: hidden;
+   text-decoration: none;
+   line-height: 150px;
+   color: #fff;
+   font-size: x-large;
+   font-family: system-ui;
+   transition: 0.25s;
+   border: 2px solid #313D5A;
+ }
+ .menu-button:hover{
+   border: 2px solid #313D5A;
+   background-color: white;
+   color: #313D5A;
+   transform: translateY(-35px);
+}
+/* .menu-button:focus{
+   border: 2px solid #313D5A;
+   background-color: white;
+   color: #313D5A;
+} */
+ #menu:not(:target)>a:first-of-type, #menu:target>a:last-of-type {
+   opacity: 1;
+   z-index: 1;
+ }
+ #menu:not(:target)>.icon-plus:before, #menu:target>.icon-minus:before { opacity: 1; }
+ .menu-item {
+   width: 50px;
+   height: 90px;
+   position: absolute;
+   left: 55%;
+   line-height: 5px;
+   top: 50%;
+   margin: -50px  -50px;
+   border-radius: 50%;
+   background-color: #313D5A;
+   transform: translate(0px, 0px);
+   transition: transform 500ms;
+   z-index: -2;
+   transition: .5s;
+   border: 2px solid #313D5A;
+ }
+ .menu-item:hover {
+   opacity: 0.5;
+   box-shadow: 0 5px 10px black;
+ }
+ .menu-item a {
+   color: #fff;
+   position: relative;
+   top: 30%;
+   left: 0;
+   text-decoration: none;
+ }
+ #menu:target>.menu-item:nth-child(6) {
+   transform: rotate(60deg) translateY(-150px) rotate(300deg);
+   transition-delay: 0s;
+   background: url(https://developer.apple.com/news/images/og/apple-pay-og-twitter.jpg);
+   background-size: 100% 50%;
+   background-repeat: no-repeat;
+   background-position-x: 50%;
+   background-position-y: 50%;
+ }
+ #menu:target>.menu-item:nth-child(5) {
+   transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+   transition-delay: 0.1s;
+   background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/618px-Mastercard-logo.svg.png);
+   background-size: 65% 50%;
+   background-repeat: no-repeat;
+   background-position-x: 50%;
+   background-position-y: 50%;
+ }
+ #menu:target>.menu-item:nth-child(3) {
+   transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+   transition-delay: 0.2s;
+   background: url(https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/phonepe-logo-icon.png);
+   background-size: 50% 50%;
+   background-repeat: no-repeat;
+   background-position-x: 50%;
+   background-position-y: 50%;
+ }
+ #menu:target>.menu-item:nth-child(4) {
+   transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+   transition-delay: 0.3s;
+   background: url(https://img.freepik.com/free-icon/paypal_318-674246.jpg);
+   background-size: 50% 50%;
+   background-repeat: no-repeat;
+   background-position-x: 50%;
+   background-position-y: 50%;
+ }
+ /* width */
+::-webkit-scrollbar {
+   width: 5px;
+   height: auto;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #F3F3F3;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #313D5A;
+   border-radius: 100px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #313d5ab7;
+ }
+ /* #notice{
+   position: absolute;
+   top: 251.0rem;
+   left: 50%;
+   transform: translateX(-50%);
+ } */
+ footer{
+   width: 100%;
+   height: fit-content;
+
+   bottom: 0;
+   /* left: 50%;
+   transform: translateX(-50%); */
+   background-color: #07505A;
+   /* background: red; */
+ }
+
+ .last{
+   width: 100%;
+   height: 167px;
+   /* position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%); */
+   background-color: #25414D;
+ }
+ .foot{
+   width: 44.30%;
+   height: 100%;
+   color: white;
+   font-family: system-ui;
+   
+ }
+ .address{
+   width: 1011px;
+   height: 245px;
+   position: absolute;
+   top: 65px;
+   left: 0px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .address h3{
+   font-size: 24px;
+   margin: 0 0 1.5em 0;
+ }
+ .address div {
+   color: white;
+   width: 388px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+ }
+ #openingHours{
+   width: 195px;
+   height: 200.8px;
+   margin: 0 0 2.5em 0;
+ }
+ #phoneNumber{
+   width: 170px;
+   height: 164.05px;
+   margin: 0 0 6.85em 0; 
+ }
+ .address p {
+   line-height: 2.25em;
+ }
+ #map{
+   width: 315.35px;
+   height: 140.25px;
+   border-radius: 12.75px;
+   position: relative;
+   top: 22.5%;
+   left: 35%;
+   box-shadow: 3.4px 3.4px 3.4px #bebebe25;
+ }
